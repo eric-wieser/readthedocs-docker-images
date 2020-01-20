@@ -1,7 +1,7 @@
 # Read the Docs - Environment base
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 LABEL mantainer="Read the Docs <support@readthedocs.com>"
-LABEL version="5.0.0"
+LABEL version="7.0.0"
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV APPDIR /app
@@ -14,6 +14,7 @@ ENV PYTHON_VERSION_36 3.6.8
 ENV PYTHON_VERSION_37 3.7.3
 ENV PYTHON_VERSION_38 3.8.0
 ENV PYPY_VERSION_35 pypy3.5-7.0.0
+# https://repo.continuum.io/miniconda/
 ENV CONDA_VERSION 4.7.12.1
 LABEL python.version_27=$PYTHON_VERSION_27
 LABEL python.version_35=$PYTHON_VERSION_35
